@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>G. Mark Kanyer – Experience</title>
+  <script>
+    function toggleInfo(id) {
+      const checkbox = document.getElementById(id);
+      checkbox.checked = !checkbox.checked;
+    }
+	  function openLightbox(src) {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  img.src = src;
+  lightbox.style.display = "flex";
+}
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+  </script>
+<style type="text/css">
+@import url("Experience.css");
+</style>
+</head>
+<body>
+  <div class="site-title">
+    <h1>G. Mark Kanyer Portfolio</h1>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+  <div class="content">
+	  <div class="experience-timeline">
+    <h2 style="text-align: center;">Experience Timeline</h2>
+		  </div>
+<div style="text-align: center; margin-bottom: 40px;">
+  <a href="https://docs.google.com/document/d/1EX7i3B2yE8qJs-c6_3yllAwLrmYK_SbW/edit" target="_blank" style="
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #00bfff;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  ">Resume</a>
+</div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="msba">
+          <label onclick="toggleInfo('msba')"><h4>Master of Science in Business Analytics</h4></label>
+          <ul>
+            <li>Applied group project with professional company</li>
+            <li>Focus: Predictive analytics, statistical modeling, data strategy</li>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('msba')">
+          <span>(June 2025 - June 2026)</span>
+          <img src="uwtmilgard.png" class="image-thumb" alt="MSBA">
+        </div>
+      </div>
+		 <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="fredmeyer">
+          <label onclick="toggleInfo('fm')"><h4>Grocery Clerk</h4></label>
+        
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('groceryclerk')">
+          <span>(July 2024 - Present)</span>
+          <img src="fm.png" class="image-thumb" alt="groceryclerk">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="microintern">
+          <label onclick="toggleInfo('microintern')"><h4>Marketing and Communications Micro Intern</h4></label>
+          <ul>
+            <li>Created marketing content for alumni and students</li>
+            <li>Promoted events via social media and outreach</li>
+            <li>Assisted with event logistics to increase participation</li>
+            <div class="image-row">
+<img src="uwtalumni1.PNG" class="sub-thumb" alt="SMA 1" onclick="openLightbox(this.src)">
+            </div>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('microintern')">
+          <span>(Feb 2025 - Mar 2025)</span>
+          <img src="uwtalumni.jpg" class="image-thumb" alt="Micro Intern">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="sma">
+          <label onclick="toggleInfo('sma')"><h4>Social Media Assistant</h4></label>
+          <ul>
+            <li>Scheduled weekly posts and increased awareness</li>
+            <li>Analyzed metrics to improve strategy</li>
+            <li>Ensured brand alignment with leadership team</li>
+            <div class="image-row">
+<img src="sem1.PNG" class="sub-thumb" alt="SMA 1" onclick="openLightbox(this.src)">
+<img src="sem2.PNG" class="sub-thumb" alt="SMA 2" onclick="openLightbox(this.src)">
+            </div>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('sma')">
+          <span>(Jan 2025 - Mar 2025)</span>
+          <img src="uwtmilgardsem.jpg" class="image-thumb" alt="Social Media">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="marketingintern">
+          <label onclick="toggleInfo('marketingintern')"><h4>Marketing Intern</h4></label>
+          <ul>
+            <li>Redesigned webpage to improve UX and branding</li>
+            <li>Grew engagement through optimized social media</li>
+            <li>Assisted in outreach research for visibility</li>
+            <div class="image-row">
+<img src="rvcdfi1.PNG" class="" alt="Marketing 1" height="150px" onclick="openLightbox(this.src)">
+            </div>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('marketingintern')">
+          <span>(May 2024 - Aug 2024)</span>
+          <img src="rvcdfi.jpg" class="image-thumb" alt="RVCDF">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="contentassistant">
+          <label onclick="toggleInfo('contentassistant')"><h4>Content Assistant</h4></label>
+          <ul>
+            <li>Managed web posts and email newsletters</li>
+            <li>Designed and edited visuals using Adobe Suite</li>
+            <li>Edited and posted engaging articles</li>
+            <div class="image-row">
+<img src="ledger4.jpg" class="sub-thumb" alt="Content 1" onclick="openLightbox(this.src)">
+<img src="ledger1.PNG" class="sub-thumb" alt="Content 2" onclick="openLightbox(this.src)">
+<img src="ledger3.PNG" class="sub-thumb" alt="Content 3" onclick="openLightbox(this.src)">
+				<img src="ledger2.PNG" class="sub-thumb" alt="Content 4" onclick="openLightbox(this.src)">
+            </div>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('contentassistant')">
+          <span>(Feb 2024 - May 2024)</span>
+          <img src="ledger.jpg" class="image-thumb" alt="Content Assistant">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="baba">
+          <label onclick="toggleInfo('baba')"><h4>BA in Business Administration (Marketing) + Business Data Analytics Minor</h4></label>
+          <ul>
+            <li>GPA: 3.7 | Dean’s List | Milgard Distinction of Excellence Program | Milgard Gold | Milgard Scholarship</li>
+            <li>Clubs: Swim Club Founder &amp;&nbsp; Marketing Coordinator, Marketing Societ , Discord Club Community Outreach</li>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('baba')">
+          <span>(Mar 2023 - June 2025)</span>
+          <img src="uwtacoma.jpeg" class="image-thumb" alt="BABA">
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="aa">
+          <label onclick="toggleInfo('aa')"><h4>AA in Business Administration</h4></label>
+          <ul>
+            <li>Running Start, Highline College Direct Transfer degree</li>
+            <li>Completed general business curriculum</li>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('aa')">
+          <span>(Sep 2019 - Aug 2022)</span>
+          <img src="highlinecollege.jpg" class="image-thumb" alt="AA Degree">
+        </div>
+      </div>
+		 <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="baba">
+          <label onclick="toggleInfo('mrp')"><h4>Lifeguard</h4></label>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('mrp')">
+          <span>(July 2017 - May 2021)</span>
+          <img src="mrp.png" class="image-thumb" alt="mrp">
+        </div>
+      </div>
+		 <div class="timeline-item">
+        <div class="text">
+          <input type="checkbox" id="hs">
+          <label onclick="toggleInfo('mrhs')"><h4>High School Diploma</h4>
+          </label>
+          <ul>
+            <li>Mount Rainier High School | Honors | IB</li>
+            <li>French 1-3 and Boys Swim & Dive Club 2016-2020</li>
+          </ul>
+        </div>
+        <div class="dot"></div>
+        <div class="date-and-image" onclick="toggleInfo('mrhs')">
+          <span>(Aug 2016 - June 2020)</span>
+          <img src="mrhs.jpg" class="image-thumb" alt="mrhs">
+        </div>
+      </div>
+    </div>  
+  </div>
+  <footer>
+    <h3>Contact</h3>
+    <div class="footer-links">
+      <a href="mailto:Markkanyer@yahoo.com">Email</a>
+      <a href="https://www.linkedin.com/in/markkanyer/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+	<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Full Image">
+</div>
+</body>
+<div id="lightbox-overlay" onclick="hideLightbox()">
+</div>
+</html>
