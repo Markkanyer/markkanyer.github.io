@@ -6,7 +6,7 @@
       font-family: roboto, sans-serif;
       background:
         linear-gradient(to bottom, rgba(2,24,97,0.85), rgba(2,18,75,0.85), rgba(2,12,57,0.85)),
-        url("images/tacomanight.jpeg") no-repeat center center fixed;
+        url("tacomanight.jpeg") no-repeat center center fixed;
       background-size: cover;
       color: white;
       min-height: 100vh;
