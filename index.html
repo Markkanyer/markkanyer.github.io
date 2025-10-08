@@ -2,38 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home – Mark Kanyer Portfolio</title>
-<style type="text/css">
-@import url("index.css");
-</style>
+  <title>Home – G. Mark Kanyer Portfolio</title>
+  <link rel="icon" type="image/png" href="images/headshot1.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Site Title -->
   <div class="site-title">
     <h1>G. Mark Kanyer Portfolio</h1>
   </div>
+
+  <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About</a>
+    <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="blog.html"><i class="fas fa-comment-dots"></i> Blog</a>
   </nav>
+
+  <!-- Main Content -->
   <div class="content">
-    <h2>Welcome to My Website</h2>
+    <h2>Welcome to My Website!</h2>
+
     <div class="intro-container">
       <div class="intro-text">
-        <p>Hello, it is nice to meet you, my name is <strong> Mark Kanyer</strong>. I am a recent Business Administration (Marketing) graduate  from the University of Washington Tacoma with a  Data Analytics minor. Since June 2025, I am currently pursuing my MSBA (Master of Science in Business Analytics) at UW Tacoma and graduate in June 2026.</p>
-        <p>This website showcases my professional journey, including class projects, work experience, and community involvement. Feel free to explore each page to learn more about my background and goals.</p>
+        <p>Hello! My name is <em>George</em> <strong>Mark Kanyer</strong>, and I am an MSBA <em>(Business Analytics)</em> student at the University of Washington <em>(UW)</em>, graduating during June 2026.</p>
+        <p>I am also a recent Business Administration graduate with a concentration in Marketing and Data Analytics minor from UW, with over a year of relevant Marketing experience from internships and on-campus jobs.</p>
+		     <p>This website showcases my professional Marketing journey, from projects to work experience, and community involvement. Check out my <strong>About</strong> and <strong>Experience</strong> pages to learn more about my background and goals, and let’s get in touch!</p>
+
       </div>
-      <img src="images/headshot1.png" alt="Picture" class="profile-pic">
+      <img src="images/headshot1.png" alt="Picture" class="profile-pic" id="profilePic">
+    </div>
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <h3>Top Skills</h3>
+      <ul>
+        <li><strong>Marketing Strategy</strong> – Developing data-driven campaigns to meet business goals.</li>
+        <li><strong>Social Media Strategy & Content Creation</strong> – Building brand presence through engaging content.</li>
+        <li><strong>Graphic & Web Design</strong> – Designing visually compelling graphics and responsive websites.</li>
+        <li><strong>User Interface & User Experience (UI/UX) Design</strong> – Creating intuitive, user-friendly digital experiences.</li>
+        <li><strong>Copywriting</strong> – Writing persuasive marketing copy for digital and print media.</li>
+        <li><strong>Data Analytics</strong> – Using analytics tools to track performance and inform decisions.</li>
+        <li><strong>Design</strong> – Overall eye for visual aesthetics, branding, and layout composition.</li>
+      </ul>
+
+   <div class="resume-btn-container">
+  <a href="https://docs.google.com/document/d/1EX7i3B2yE8qJs-c6_3yllAwLrmYK_SbW/edit" 
+     target="_blank" class="resume-btn">
+    Resume
+  </a>
+</div>
+      </div>
     </div>
   </div>
-  <footer>
-    <h3>Contact</h3>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <img src="images/headshot1.png" alt="Enlarged Picture">
+  </div>
+
+  <!-- Footer -->
+  <footer class="contact-footer">
+    <h3><strong>Contact</strong></h3>
     <div class="footer-links">
-      <a href="mailto:Markkanyer@yahoo.com">Email</a>
-      <a href="https://www.linkedin.com/in/markkanyer/" target="_blank">LinkedIn</a>
+      <a href="mailto:Markkanyer@yahoo.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/markkanyer/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Markkanyer" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     </div>
   </footer>
+
+  <!-- Lightbox Script -->
+  <script>
+    const profilePic = document.getElementById("profilePic");
+    const lightbox = document.getElementById("lightbox");
+
+    profilePic.addEventListener("click", () => {
+      lightbox.classList.add("show");
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("show");
+    });
+  </script>
+
 </body>
 </html>
