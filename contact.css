@@ -1,118 +1,154 @@
 @charset "utf-8";
-/* CSS Document */
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: roboto, sans-serif;
-      background:
-        linear-gradient(to bottom, rgba(2,24,97,0.85), rgba(2,18,75,0.85), rgba(2,12,57,0.85)),
-        url("images/tacomanight.jpeg") no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .site-title {
-      background: linear-gradient(to right, #000000, #020e3f, #001b76);
-      text-align: center;
-      padding: 20px;
-    }
-    .site-title h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 1px;
-    }
-    nav {
-      background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
-      text-align: center;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #000;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #0056b3;
-    }
-    .contact-heading {
-      text-align: center;
-      color: #00bfff;
-      font-size: 2em;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .form-container {
-      width: 100%;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
-      max-width: 600px;
-    }
-    label {
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    input, textarea {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1em;
-    }
-    textarea {
-      height: 150px;
-      resize: vertical;
-    }
-    input[type="submit"] {
-      background-color: #00bfff;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      padding: 12px;
-    }
-    input[type="submit"]:hover {
-      background-color: #009acd;
-    }
-    footer {
-      background: linear-gradient(to right, #000000, #020e3f, #001b76);
-      text-align: center;
-      padding: 25px 20px 20px 20px;
-      margin-top: auto;
-    }
-    footer h3 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 1.4em;
-    }
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
-      color: #ccc;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-    .footer-links a:hover {
-      color: #00bfff;
-      text-decoration: underline;
-    }
+
+/* -------------------- GLOBAL -------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  background:
+    linear-gradient(to bottom, rgba(2,24,97,0.85), rgba(2,18,75,0.85), rgba(2,12,57,0.85)),
+    url("images/tacomanight.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------- SITE TITLE -------------------- */
+.site-title {
+  background: linear-gradient(to right, #000000, #020e3f, #001b76);
+  text-align: center;
+  padding: 20px;
+}
+.site-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+nav {
+  background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #000;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* -------------------- CONTACT SECTION -------------------- */
+#contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact-title {
+  font-size: 2.2em;
+  color: #00bfff;   /* light blue */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Contact Form Box */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 32%;         /* halved from 65% to ~32% */
+  min-height: 22vh;   /* halved from 45vh */
+  padding: 25px;      /* halved from 50px */
+  background: rgba(0,0,0,0.6);
+  border-left: 6px solid #00bfff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 1.1em;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Message box */
+.contact-form textarea {
+  flex: 1;
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* Submit button */
+.contact-form input[type="submit"] {
+  background: linear-gradient(to bottom, #00cfff, #009acd);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 1.2em;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.contact-form input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #00b5e6, #007fa3);
+  transform: translateY(-2px);
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer h3 {
+  background: linear-gradient(to right, #000000, #020e3f, #001b76);
+  color: #fff;
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 12px 0;
+}
+.footer-links {
+  background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px;
+}
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
