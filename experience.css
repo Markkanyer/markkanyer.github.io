@@ -1,196 +1,266 @@
 @charset "utf-8";
-/* CSS Document */
-  html, body {
-      margin: 0;
-      padding: 0;
-      font-family: roboto, sans-serif;
-      background:
-        linear-gradient(to bottom, rgba(2,24,97,0.85), rgba(2,18,75,0.85), rgba(2,12,57,0.85)),
-        url("images/tacomanight.jpeg") no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .site-title {
-      background: linear-gradient(to right, #000000, #020e3f, #001b76);
-      text-align: center;
-      padding: 20px;
-    }
-    .site-title h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 1px;
-    }
-    nav {
-      background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
-      text-align: center;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #000;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #0056b3;
-    }
- .experience-timeline {
-      font-size: 1.5em;
-      color: #00bfff;
-      text-align: center;
-    }	  
-    .content {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      padding-bottom: 100px;
-    }
-       footer {
-      background: linear-gradient(to right, #000000, #020e3f, #001b76);
-      text-align: center;
-      padding: 25px 20px 20px 20px;
-      margin-top: auto;
-    }
-    footer h3 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 1.4em;
-    }
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
-      color: #ccc;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-    .footer-links a:hover {
-      color: #00bfff;
-      text-decoration: underline;
-    }
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      margin-top: 30px;
-      position: relative;
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background-color: #ccc;
-      z-index: 0;
-    }
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 1fr 40px 1fr;
-      align-items: center;
-      gap: 20px;
-      position: relative;
-    }
-    .timeline-item .dot {
-      width: 16px;
-      height: 16px;
-      background-color: #fff;
-      border: 3px solid #00bfff;
-      border-radius: 50%;
-      z-index: 1;
-      margin: auto;
-    }
-    .text {
-      text-align: right;
-    }
-    .text h4 {
-      margin: 10;
-      font-size: 1.2em;
-      color: #fff;
-      cursor: pointer;
-    }
-    .text ul {
-  margin-top: 10px;
-  display: block;
-  padding-left: 20px;
+
+/* -------------------- GLOBAL -------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  background:
+    linear-gradient(to bottom, rgba(2,24,97,0.85), rgba(2,18,75,0.85), rgba(2,12,57,0.85)),
+    url("images/tacomanight.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------- SITE TITLE -------------------- */
+.site-title {
+  background: linear-gradient(to right, #000000, #020e3f, #001b76);
+  text-align: center;
+  padding: 20px;
+}
+.site-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+nav {
+  background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #000;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* -------------------- RESUME BUTTON -------------------- */
+.resume-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+}
+.resume-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(to bottom, #00cfff, #009acd);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.resume-btn:hover {
+  background: linear-gradient(to bottom, #00b5e6, #007fa3);
+  transform: translateY(-2px);
+}
+
+/* -------------------- CONTENT -------------------- */
+.content {
+  flex: 1;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.content h2 {
+  font-size: 2em;
+  color: #00bfff;
+  text-align: center;
+}
+
+/* -------------------- TIMELINE -------------------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 40px;
+  width: 80%;
+  max-width: 900px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px #00bfff;
+}
+
+/* -------------------- TIMELINE ITEM -------------------- */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+.timeline-item .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #00bfff;
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 8px;
+  box-shadow: 0 0 10px #00bfff;
+}
+
+/* Left side text */
+.text {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+.text h4 {
+  margin: 0;
+  color: #00bfff;
+  font-size: 1.4em;
+}
+.text ul {
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style: disc inside;
+  font-size: 1.1em;
+  color: #ddd;
+}
+
+/* Right side date/image */
+.date-and-image {
+  flex: 1;
   text-align: left;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.date-and-image span {
+  font-size: 0.95em;
   color: #ccc;
 }
-    .date-and-image {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-    }
-    .image-thumb {
-      width: 120px;
-      border-radius: 8px;
-      border: 2px solid #00bfff;
-      cursor: pointer;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
-      transition: transform 0.2s;
-    }
-    .image-thumb:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.85);
-    }
-    .image-row {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 15px;
-      flex-wrap: wrap;
-    }
-    .sub-thumb {
-      width: 200px;
-      border-radius: 6px;
-      border: 2px solid #00bfff;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-      transition: transform 0.2s;
-    }
-    .sub-thumb:hover {
-      transform: scale(1.05);
-    }
-    input[type="checkbox"] {
-      display: none;
-    }
-    input[type="checkbox"]:checked + label + ul {
-      display: block;
-    }
+
+/* -------------------- IMAGE STYLING -------------------- */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.image-thumb {
+  width: 60%;
+  max-height: 300px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  border: 1.5px solid #00bfff;   /* thinner outline */
+  box-shadow: 0 0 12px rgba(0,191,255,0.6); /* softer glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.image-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px rgba(0,191,255,0.9);
+}
+.date-and-image .image-thumb:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 16px rgba(0, 191, 255, 1);
+	object-fit: cover;
+
+}
+
+/* -------------------- LIGHTBOX -------------------- */
 .lightbox {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0; top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 2000;
+}
+.lightbox.show {
+  opacity: 1;
+  visibility: visible;
 }
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
-  border: 4px solid #00bfff;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(0, 191, 255, 0.8);
-  background: #000;
-  padding: 10px;
-  animation: fadeIn 0.3s ease-in-out;
+  border-radius: 15px;
+  border: 4px solid #001f4d;
+  box-shadow: 0 0 30px 10px rgba(0, 102, 204, 1);
+  transition: transform 0.3s ease;
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to   { opacity: 1; transform: scale(1); }
+.lightbox img:hover {
+  transform: scale(1.02);
+}
+
+
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer h3 {
+  background: linear-gradient(to right, #000000, #020e3f, #001b76);
+  color: #fff;
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 12px 0;
+}
+.footer-links {
+  background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.timeline .text ul {
+  list-style: disc outside;
+  padding-left: 22px;
+  margin: 8px 0;
+  text-align: left !important; /* force bullets + text to the left */
+}
+
+.timeline .text ul li {
+  margin: 6px 0;
+  white-space: normal; /* let bullets wrap normally */
 }
