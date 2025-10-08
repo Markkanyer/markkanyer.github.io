@@ -1,41 +1,80 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About – Mark Kanyer Portfolio</title>
-<style type="text/css">
-@import url("about.css");
-</style>
+  <title>Home – G. Mark Kanyer Portfolio</title>
+  <link rel="icon" type="image/png" href="image">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="site-title">
     <h1>G. Mark Kanyer Portfolio</h1>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
+
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About</a>
+    <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="blog.html"><i class="fas fa-comment-dots"></i> Blog</a>
   </nav>
-<div class="content">
+
+  <div class="content">
     <h2>About Me</h2>
-    <div class="about-wrapper">
-      <div class="about-text">
-        <p>I’ve developed a strong foundation in digital marketing, communications, and data storytelling through a variety of internships and roles. These experiences have allowed me to create compelling content, manage social media strategies, and support event marketing for both educational and community organizations.</p>
-        <p>Whether it’s crafting engaging campaigns, analyzing performance metrics, or streamlining communications, I thrive in roles that blend creativity and analytics. I’m especially drawn to projects that aim to make an impact by helping brands communicate better, people connect more easily, and communities grow stronger through digital presence.</p>
-        <p>When I’m not working or studying, I enjoy traveling across the US, spending time with friends and family, gaming, and spending time in nature swimming and jogging around the beautiful Pacific Northwest area.</p>
-        <p>Thank you for visiting, feel free to check out my experience and get in touch!</p>
+    <div class="intro-container">
+      <div class="intro-text">
+        <p>As a Seattleite born just south of the city, I developed a deep passion for creativity, technology, strategy, and storytelling as a young child. Even as a kid, I was a walking billboard, always wearing Mountain Dew and Dr. Pepper logos on my t-shirts without realizing I was already marketing.&nbsp; <em>&nbsp;</em> </p>
+        <p>Marketing became a clear career path after I ended up in a marketing class in high school. I quickly realized that marketing  combined creativity, strategy, and technology in a way that just felt completely natural to me. (And with Mark as my middle name, I figured it just made  sense.)</p>
+        <p>Outside of marketing, I enjoy staying active through swimming, weightlifting and hiking, and I love traveling to discover new and exciting places. In my downtime, I immerse myself in video games, movies, and music, and I value spending quality time with friends and family.</p>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+        </div>
       </div>
-      <img src="images/headshot2.png" alt="Profile Image" class="profile-img">
+      
+      <!-- Profile Image -->
+      <img src="images/headshot2.png" alt="Picture" class="profile-pic" id="profilePic">
     </div>
   </div>
-<footer>
-    <h3>Contact</h3>
-    <div class="footer-links">
-      <a href="mailto:Markkanyer@yahoo.com">Email</a>
-      <a href="https://www.linkedin.com/in/markkanyer/" target="_blank">LinkedIn</a>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <img src="images/headshot2.png" alt="Enlarged Picture">
+  </div>
+
+</div>
+
+<footer class="contact-footer">
+    <div class="contact-header">
+      <h3><strong>Contact</strong></h3>
+    </div>
+  <div class="contact-linksbar">
+      <div class="footer-links">
+        <a href="mailto:Markkanyer@yahoo.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/markkanyer/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Markkanyer" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    const profilePic = document.getElementById("profilePic");
+    const lightbox = document.getElementById("lightbox");
+
+    profilePic.addEventListener("click", () => {
+      lightbox.classList.add("show");
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("show");
+    });
+  </script>
 </body>
 </html>
