@@ -70,7 +70,7 @@ nav a:hover {
   flex-direction: column;
   gap: 20px;
 
-  width: 32%;         /* halved from 65% to ~32% */
+  width: 52%;         /* halved from 65% to ~32% */
   min-height: 22vh;   /* halved from 45vh */
   padding: 25px;      /* halved from 50px */
   background: rgba(0,0,0,0.6);
@@ -138,9 +138,9 @@ footer h3 {
   background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
-  padding: 18px;
+  padding: 20px;
 }
 .footer-links a {
   color: #000;
