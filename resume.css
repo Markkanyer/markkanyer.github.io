@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* -------------------- GLOBAL -------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  background:
+    linear-gradient(to bottom, rgba(2,24,97,0.85), rgba(2,18,75,0.85), rgba(2,12,57,0.85)),
+    url("images/tacomanight.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------- SITE TITLE -------------------- */
+.site-title {
+  background: linear-gradient(to right, #000000, #020e3f, #001b76);
+  text-align: center;
+  padding: 20px;
+}
+.site-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+nav {
+  background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #000;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* -------------------- CONTENT -------------------- */
+.content {
+  flex: 1;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.content h2 {
+  font-size: 2em;
+  color: #00bfff;
+  text-align: center;
+}
+
+/* -------------------- RESUME BUTTON -------------------- */
+.resume-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 70px 0;
+}
+.resume-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(to bottom, #00cfff, #009acd);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.resume-btn:hover {
+  background: linear-gradient(to bottom, #00b5e6, #007fa3);
+  transform: translateY(-2px);
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer h3 {
+  background: linear-gradient(to right, #000000, #020e3f, #001b76);
+  color: #fff;
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 12px 0;
+}
+.footer-links {
+  background: linear-gradient(to right, #aaaaaa, #cccccc, #eeeeee);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
