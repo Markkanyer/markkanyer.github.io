@@ -59,30 +59,6 @@ nav a:hover {
   color: #00bfff;
   text-align: center;
 }
-
-/* -------------------- RESUME BUTTON -------------------- */
-.resume-btn-container {
-  display: flex;
-  justify-content: center;
-  margin: 100px 0 70px 0;
-}
-.resume-btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(to bottom, #00cfff, #009acd);
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-.resume-btn:hover {
-  background: linear-gradient(to bottom, #00b5e6, #007fa3);
-  transform: translateY(-2px);
-}
-
 /* -------------------- FOOTER -------------------- */
 footer {
   text-align: center;
